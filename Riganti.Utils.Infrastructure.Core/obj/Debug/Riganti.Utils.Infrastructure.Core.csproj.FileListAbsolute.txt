@@ -1,0 +1,5 @@
+C:\PV178\6.cviceni\Web\Web\Riganti.Utils.Infrastructure.Core\bin\Debug\Riganti.Utils.Infrastructure.Core.dll
+C:\PV178\6.cviceni\Web\Web\Riganti.Utils.Infrastructure.Core\bin\Debug\Riganti.Utils.Infrastructure.Core.pdb
+C:\PV178\6.cviceni\Web\Web\Riganti.Utils.Infrastructure.Core\obj\Debug\Riganti.Utils.Infrastructure.Core.csprojResolveAssemblyReference.cache
+C:\PV178\6.cviceni\Web\Web\Riganti.Utils.Infrastructure.Core\obj\Debug\Riganti.Utils.Infrastructure.Core.dll
+C:\PV178\6.cviceni\Web\Web\Riganti.Utils.Infrastructure.Core\obj\Debug\Riganti.Utils.Infrastructure.Core.pdb
