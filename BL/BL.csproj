@@ -33,7 +33,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Riganti.Utils.Infrastructure.Core, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Riganti.Utils.Infrastructure.Core.1.0.3\lib\net45\Riganti.Utils.Infrastructure.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Riganti.Utils.Infrastructure.EntityFramework, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Riganti.Utils.Infrastructure.EntityFramework.1.0.3\lib\net45\Riganti.Utils.Infrastructure.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,12 +64,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="AppFacadeBase.cs" />
+    <Compile Include="AppQuery.cs" />
+    <Compile Include="AppUnitOfWork.cs" />
+    <Compile Include="AppUnitOfWorkProvider.cs" />
+    <Compile Include="DTOs\QuestionDTO.cs" />
+    <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="DTOs\StudentGroupDTO.cs" />
+    <Compile Include="DTOs\TeacherDTO.cs" />
+    <Compile Include="DTOs\TestPrefaceDTO.cs" />
+    <Compile Include="DTOs\ThematicFieldDTO.cs" />
+    <Compile Include="Facades\QuestionFacade.cs" />
+    <Compile Include="Facades\StudentFacade.cs" />
+    <Compile Include="Facades\StudentGroupFacade.cs" />
+    <Compile Include="Facades\TeacherFacade.cs" />
+    <Compile Include="Facades\TestPrefaceFacade.cs" />
+    <Compile Include="Facades\ThematicFieldFacade.cs" />
+    <Compile Include="Mapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\QuestionListQuery.cs" />
+    <Compile Include="Queries\StudentGroupListQuery.cs" />
+    <Compile Include="Queries\StudentListQuery.cs" />
+    <Compile Include="Queries\TeacherListQuery.cs" />
+    <Compile Include="Queries\TestPrefaceListQuery.cs" />
+    <Compile Include="Queries\ThematicFieldListQuery.cs" />
+    <Compile Include="Repositories\QuestionRepository.cs" />
+    <Compile Include="Repositories\StudentGroupRepository.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Repositories\TeacherRepository.cs" />
+    <Compile Include="Repositories\TestPrefaceRepository.cs" />
+    <Compile Include="Repositories\ThematicFieldRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{46387EDD-2F62-49FA-A2C7-3F1F6D84476B}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

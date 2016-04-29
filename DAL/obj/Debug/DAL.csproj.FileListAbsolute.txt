@@ -8,9 +8,3 @@ C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_p
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.exe
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.pdb
-C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project - Copy\DAL\bin\Debug\DAL.exe.config
-C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project - Copy\DAL\obj\Debug\DAL.exe
-C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project - Copy\DAL\obj\Debug\DAL.pdb
-C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.exe.config
-C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.exe
-C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.pdb
