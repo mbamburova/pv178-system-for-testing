@@ -13,7 +13,7 @@ namespace DAL.Entities {
 
         public string Text { get; set; }
 
-        public string Answer { get; set; }
+        public List<Answer> Answers { get; set; }
 
         public int Points { get; set; }
 
@@ -21,6 +21,10 @@ namespace DAL.Entities {
 
         [MaxLength(200)]
         public string Note { get; set; }
+
+        public Question() {
+            Answers = new List<Answer>();
+        }
 
         public override string ToString() {
             return $"Question with ID: {Id}";

@@ -18,7 +18,7 @@ namespace DAL {
 
 
         public StudentsContext() : base() {
-            Database.SetInitializer(new NullDatabaseInitializer<>());
+            Database.SetInitializer(new DataInitializer());
         }
     }
 }

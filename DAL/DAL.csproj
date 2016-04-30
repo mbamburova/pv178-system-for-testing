@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataInitializer.cs" />
+    <Compile Include="Entities\Answer.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\Student.cs" />
     <Compile Include="Entities\StudentGroup.cs" />

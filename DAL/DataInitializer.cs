@@ -10,6 +10,8 @@ namespace DAL {
 
         protected override void Seed(StudentsContext context) {
             
+         
+
         }
     }
 }
