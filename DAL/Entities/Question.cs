@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Riganti.Utils.Infrastructure.Core;
 
 namespace DAL.Entities {
-    public class Question {
+    public class Question : IEntity<int> {
         public int Id { get; set; }
 
         public int NumberOfCorrectAnswers { get; set; }

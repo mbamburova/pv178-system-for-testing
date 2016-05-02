@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using Riganti.Utils.Infrastructure.Core;
 
 namespace DAL.Entities {
-    public class ThematicField {
+    public class ThematicField : IEntity<int> {
         public int Id { get; set; }
 
         public string Name { get; set; }

@@ -1,7 +1,9 @@
 ﻿
 
+using Riganti.Utils.Infrastructure.Core;
+
 namespace DAL.Entities {
-    public class Answer {
+    public class Answer : IEntity<int> {
 
         public int Id { get; set; }
 

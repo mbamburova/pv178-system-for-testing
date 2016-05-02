@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Riganti.Utils.Infrastructure.Core;
 
 namespace DAL.Entities {
-    public class Student {
+    public class Student : IEntity<int> {
         public int Id { get; set; }
 
         [MaxLength(30)]
