@@ -7,6 +7,10 @@ using static AutoMapper.Mapper;
 namespace BL {
     class Mapping {
         public static void Create() {
+
+            CreateMap<Answer, AnswerDTO>();
+            CreateMap<AnswerDTO, Answer>();
+
             CreateMap<Question, QuestionDTO>();
             CreateMap<QuestionDTO, Question>();
 

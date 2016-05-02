@@ -7,7 +7,7 @@ using DAL.Entities;
 namespace BL.Queries {
     class QuestionListQuery : AppQuery<QuestionDTO> {
 
-        public QuestionListQuery(IUnitOfWorkProvider prpovider) : base(provider) {
+        public QuestionListQuery(IUnitOfWorkProvider provider) : base(provider) {
             
         }
 

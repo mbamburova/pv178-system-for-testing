@@ -15,7 +15,7 @@ namespace DAL {
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<TestPreface> TestPrefaces { get; set; }
         public DbSet<ThematicField> ThematicFields { get; set; }
-
+        public DbSet<Answer> Answers { get; set; }
 
         public StudentsContext() : base() {
             Database.SetInitializer(new DataInitializer());
