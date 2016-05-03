@@ -26,13 +26,15 @@ namespace BL.Facades {
             }
         }
 
-        public AnswerDTO GetProductById(int productId) {
+        public AnswerDTO GetAswerById(int answerId) {
             using (var uow = UnitOfWorkProvider.Create()) {
-                var appProduct = Repository.GetById(productId);
-                return Mapper.Map<AnswerDTO>(appProduct);
+                var appAnswer = Repository.GetById(answerId);
+                return Mapper.Map<AnswerDTO>(appAnswer);
             }
         }
 
-
+        public List<AnswerDTO> GetAnswersByQuestion() {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using BL.DTOs;
 using BL.Queries;
 using BL.Repositories;
@@ -18,5 +19,23 @@ namespace BL.Facades {
             var query = StudentListQuery;
             return query;
         }
+
+        public StudentDTO GetStudentById(int studentId) {
+            using (UnitOfWorkProvider.Create()) {
+                var student = Repository.GetById(studentId);
+                return Mapper.Map<StudentDTO>(student);
+            }
+        }
+
+        public List<StudentDTO> GetAllStudents() {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                return CreateQuery().Execute().ToList();
+            }
+        }
+
+        public List<StudentDTO> GetStudentsByStudentsGroups() {
+            throw new NotImplementedException();
+        } 
+
     }
 }

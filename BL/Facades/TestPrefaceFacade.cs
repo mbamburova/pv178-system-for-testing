@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using BL.DTOs;
 using BL.Queries;
 using BL.Repositories;
@@ -18,5 +19,20 @@ namespace BL.Facades {
             var query = TestPrefaceListQuery;
             return query;
         }
+
+        public List<TestPrefaceDTO> GetAllTestPrefaces() {
+            using (UnitOfWorkProvider.Create()) {
+                return CreateQuery().Execute().ToList();
+            }
+        }
+
+        public TestPrefaceDTO GetTestPrefaceById(int tpId) {
+            using (UnitOfWorkProvider.Create()) {
+                var testPreface = Repository.GetById(tpId);
+                return Mapper.Map<TestPrefaceDTO>(testPreface);
+            }
+        }
+
+
     }
 }
