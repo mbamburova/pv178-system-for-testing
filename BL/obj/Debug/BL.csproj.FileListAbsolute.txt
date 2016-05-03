@@ -1,2 +1,3 @@
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\BL\bin\Debug\BL.exe.config
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.exe.config
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache

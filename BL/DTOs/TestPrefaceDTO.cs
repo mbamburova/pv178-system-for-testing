@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.DTOs {
-    class TestPrefaceDTO {
+    public class TestPrefaceDTO {
         public int Id { get; set; }
 
         [Required]

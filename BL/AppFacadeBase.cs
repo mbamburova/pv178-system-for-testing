@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL {
-    class AppFacadeBase {
+    public class AppFacadeBase {
 
         public IUnitOfWorkProvider UnitOfWorkProvider { get; set; }
     }

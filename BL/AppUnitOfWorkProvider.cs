@@ -8,7 +8,7 @@ using Riganti.Utils.Infrastructure.Core;
 using Riganti.Utils.Infrastructure.EntityFramework;
 
 namespace BL {
-    class AppUnitOfWorkProvider :EntityFrameworkUnitOfWorkProvider {
+    public class AppUnitOfWorkProvider :EntityFrameworkUnitOfWorkProvider {
         public AppUnitOfWorkProvider(IUnitOfWorkRegistry registry, Func<DbContext> dbContextFactory) : base(registry, dbContextFactory) {
         }
 

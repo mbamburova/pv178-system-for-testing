@@ -9,7 +9,7 @@ using System.Data.Entity;
 using Component = Castle.MicroKernel.Registration.Component;
 
 namespace BL {
-    class Installer : IWindsorInstaller {
+    public class Installer : IWindsorInstaller {
         public void Install(IWindsorContainer container, IConfigurationStore store) {
             container.Register(
 

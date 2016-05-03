@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.DTOs {
-    class StudentDTO {
+    public class StudentDTO {
         public int Id { get; set; }
 
         [MaxLength(30)]
@@ -21,4 +21,4 @@ namespace BL.DTOs {
         public override string ToString() => $"StudentDTO {Name} {Surname}, with id: {Id}";
     }
 }
-}
+

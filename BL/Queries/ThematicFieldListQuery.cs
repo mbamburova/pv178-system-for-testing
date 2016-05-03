@@ -9,7 +9,7 @@ using DAL.Entities;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Queries {
-    class ThematicFieldListQuery : AppQuery<ThematicFieldDTO> {
+    public class ThematicFieldListQuery : AppQuery<ThematicFieldDTO> {
         public ThematicFieldListQuery(IUnitOfWorkProvider provider) : base(provider) {
         }
 

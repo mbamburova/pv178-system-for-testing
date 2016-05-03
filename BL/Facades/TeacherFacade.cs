@@ -9,7 +9,7 @@ using BL.Repositories;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Facades {
-    class TeacherFacade : AppFacadeBase {
+    public class TeacherFacade : AppFacadeBase {
         public TeacherRepository Repository { get; set; }
         public TeacherListQuery TeacherListQuery { get; set; }
 

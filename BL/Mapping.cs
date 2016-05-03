@@ -3,7 +3,7 @@ using DAL.Entities;
 using static AutoMapper.Mapper;
 
 namespace BL {
-    class Mapping {
+    public class Mapping {
         public static void Create() {
 
             CreateMap<Answer, AnswerDTO>();

@@ -10,7 +10,7 @@ using BL.Repositories;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Facades {
-    class TestPrefaceFacade : AppFacadeBase  {
+    public class TestPrefaceFacade : AppFacadeBase  {
 
         public TestPrefaceRepository Repository { get; set; }
         public TestPrefaceListQuery TestPrefaceListQuery { get; set; }

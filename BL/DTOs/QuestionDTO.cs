@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DAL.Entities;
 
 namespace BL.DTOs {
-    class QuestionDTO {
+    public class QuestionDTO {
         public int Id { get; set; }
 
         public List<AnswerDTO> Answers { get; set; }

@@ -9,7 +9,7 @@ using DAL.Entities;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Queries {
-    class TestPrefaceListQuery : AppQuery<TestPrefaceDTO> {
+    public class TestPrefaceListQuery : AppQuery<TestPrefaceDTO> {
         public TestPrefaceListQuery(IUnitOfWorkProvider provider) : base(provider) {
         }
 

@@ -10,7 +10,7 @@ using BL.Repositories;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Facades {
-    class ThematicFieldFacade : AppFacadeBase {
+    public class ThematicFieldFacade : AppFacadeBase {
 
         public ThematicFieldRepository Repository { get; set; }
         public ThematicFieldListQuery ThematicFieldListQuery { get; set; }

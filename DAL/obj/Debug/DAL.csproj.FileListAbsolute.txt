@@ -24,3 +24,4 @@ C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\D
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.FirstMigration.resources
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.removedattributeinentityAnswer.resources
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.addedattributeinAnswer.resources
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\Riganti.Utils.Infrastructure.EntityFramework.dll

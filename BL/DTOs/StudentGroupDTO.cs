@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.DTOs {
-    class StudentGroupDTO {
+    public class StudentGroupDTO {
         public int Id { get; set; }
 
         [Required]

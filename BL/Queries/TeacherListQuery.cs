@@ -9,7 +9,7 @@ using DAL.Entities;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Queries {
-    class TeacherListQuery : AppQuery<TeacherDTO> {
+    public class TeacherListQuery : AppQuery<TeacherDTO> {
         public TeacherListQuery(IUnitOfWorkProvider provider) : base(provider) {
         }
 

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs {
-    class AnswerDTO {
+    public class AnswerDTO {
 
         public int Id { get; set; }
 

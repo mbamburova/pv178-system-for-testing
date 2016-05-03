@@ -9,7 +9,7 @@ using DAL.Entities;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Queries {
-    class StudentGroupListQuery : AppQuery<StudentGroupDTO> {
+    public class StudentGroupListQuery : AppQuery<StudentGroupDTO> {
         public StudentGroupListQuery(IUnitOfWorkProvider provider) : base(provider) {
         }
 

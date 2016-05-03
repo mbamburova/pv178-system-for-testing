@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using DAL.Entities;
 
 namespace BL.DTOs {
-    class ThematicFieldDTO {
+    public class ThematicFieldDTO {
+        private TeacherDTO _teacher;
         public int Id { get; set; }
 
         [Required]
