@@ -1,6 +1,4 @@
-﻿using System;
-using AutoMapper.Mappers;
-using BL.DTOs;
+﻿using BL.DTOs;
 using DAL.Entities;
 using static AutoMapper.Mapper;
 
