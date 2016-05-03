@@ -18,7 +18,9 @@ namespace DAL {
         public DbSet<Answer> Answers { get; set; }
 
         public StudentsContext() : base() {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
+          //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
+          //????
+          Database.SetInitializer(new DataInitializer());
         }
     }
 }
