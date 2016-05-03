@@ -8,3 +8,19 @@ C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_p
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.exe
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\DAL\obj\Debug\DAL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.exe.config
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.exe
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.exe
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\Riganti.Utils.Infrastructure.Core.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.InitialCreate.resources
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.FirstMigration.resources
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.removedattributeinentityAnswer.resources
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.addedattributeinAnswer.resources

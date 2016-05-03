@@ -9,6 +9,7 @@ namespace DAL.Entities {
         [Required]
         public string Name { get; set; }
 
+        [Required]
         public int TimeInMinutes { get; set; }
 
         public virtual StudentGroup StudentGroups { get; set; }

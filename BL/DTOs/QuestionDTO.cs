@@ -12,6 +12,7 @@ namespace BL.DTOs {
 
         public List<AnswerDTO> Answers { get; set; }
 
+        [Required]
         public string Text { get; set; }
 
         public string Answer { get; set; }

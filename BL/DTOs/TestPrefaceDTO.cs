@@ -12,6 +12,7 @@ namespace BL.DTOs {
         [Required]
         public string Name { get; set; }
 
+        [Required]
         public int TimeInMinutes { get; set; }
 
         public virtual StudentGroupDTO StudentGroups { get; set; }

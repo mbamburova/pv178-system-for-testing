@@ -64,6 +64,23 @@
     <Compile Include="Entities\Teacher.cs" />
     <Compile Include="Entities\TestPreface.cs" />
     <Compile Include="Entities\ThematicField.cs" />
+    <Compile Include="Migrations\201604252028441_InitialCreate.cs" />
+    <Compile Include="Migrations\201604252028441_InitialCreate.Designer.cs">
+      <DependentUpon>201604252028441_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605030937163_First Migration.cs" />
+    <Compile Include="Migrations\201605030937163_First Migration.Designer.cs">
+      <DependentUpon>201605030937163_First Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605030957313_removed attribute in entity Answer.cs" />
+    <Compile Include="Migrations\201605030957313_removed attribute in entity Answer.Designer.cs">
+      <DependentUpon>201605030957313_removed attribute in entity Answer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605031000122_added attribute in Answer.cs" />
+    <Compile Include="Migrations\201605031000122_added attribute in Answer.Designer.cs">
+      <DependentUpon>201605031000122_added attribute in Answer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentsContext.cs" />
@@ -71,6 +88,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604252028441_InitialCreate.resx">
+      <DependentUpon>201604252028441_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605030937163_First Migration.resx">
+      <DependentUpon>201605030937163_First Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605030957313_removed attribute in entity Answer.resx">
+      <DependentUpon>201605030957313_removed attribute in entity Answer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605031000122_added attribute in Answer.resx">
+      <DependentUpon>201605031000122_added attribute in Answer.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
