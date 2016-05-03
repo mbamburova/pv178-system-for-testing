@@ -11,13 +11,13 @@ namespace DAL.Entities {
 
         public virtual Teacher Teacher { get; set; }
 
-        //NOVE
         public ThematicField Parent { get; set; }
 
         public virtual List<ThematicField> Others { get; set; }
 
         public ThematicField() {
             Questions = new List<Question>();
+            Others = new List<ThematicField>();
         }
 
         public override string ToString() {

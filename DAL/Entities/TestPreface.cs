@@ -15,6 +15,8 @@ namespace DAL.Entities {
 
         public virtual List<ThematicField> ThematicFields { get; set; }
 
+        public int NumberOfQuestions { get; set; }
+
         public virtual Teacher Teacher { get; set; }
 
         public TestPreface() {

@@ -20,6 +20,8 @@ namespace BL.DTOs {
 
         public virtual TeacherDTO Teacher { get; set; }
 
+        public int NumberOfQuestions { get; set; }
+
         public TestPrefaceDTO() {
             ThematicFields = new List<ThematicFieldDTO>();
         }
