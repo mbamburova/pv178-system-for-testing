@@ -11,6 +11,10 @@ namespace DAL.Entities {
 
         public string Text { get; set; }
 
+
+        //NOVE
+        public bool isCorrect { get; set; }
+
         public override string ToString() {
             return Text;
         }
