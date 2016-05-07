@@ -1,3 +1,21 @@
 C:\Users\Michaela Bamburová\Desktop\IV. sem\PV178 Uvod do vyvoja CNET\Testing_project\BL\bin\Debug\BL.exe.config
-C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.exe.config
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.dll.config
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\AutoMapper.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Castle.Core.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Castle.Windsor.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\DAL.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\EntityFramework.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Riganti.Utils.Infrastructure.Core.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Riganti.Utils.Infrastructure.EntityFramework.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\DAL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\AutoMapper.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Castle.Core.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\Castle.Windsor.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\EntityFramework.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.pdb

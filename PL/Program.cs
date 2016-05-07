@@ -1,40 +1,71 @@
-﻿using System;
-using System.Configuration.Install;
-using System.Linq;
-using BL;
-using BL.DTOs;
+﻿using BL;
 using BL.Facades;
 using Castle.Windsor;
-using Installer = BL.Installer;
-
 
 namespace PL {
     class Program {
-
         private static IWindsorContainer container;
 
         static void Main(string[] args) {
 
             PerformStartup();
-
+            TestStudentFacade();
             TestAnswerFacade();
+            TestQuestionFacade();
+            TestStudentGroupFacade();
+            TestTeacherFacade();
+            TestPrefaceFacade();
+            TestThematicFielFacade();
+
+        }
+
+        private static void TestStudentFacade() {
+            var studentFacade = container.Resolve<StudentFacade>();
+            
+            var allStudents = studentFacade.GetAllStudents();
+
+            var studentWithId2 = studentFacade.GetStudentById(2);
+            
         }
 
         private static void TestAnswerFacade() {
             var answerFacade = container.Resolve<AnswerFacade>();
+            
+        }
 
-            var allAnswers = answerFacade.GetAllAnswers();
+        private static void TestQuestionFacade() {
+            var questionFacade = container.Resolve<QuestionFacade>();
+            
+            
+        }
 
-            var answerWithId2 = answerFacade.GetAswerById(2);
+        private static void TestStudentGroupFacade() {
+            var studentGroupFacade = container.Resolve<StudentGroupFacade>();
+            
+            
+        }
+
+        private static void TestTeacherFacade() {
+            var teacherFacade = container.Resolve<TeacherFacade>();
+            
+            
+        }
+
+        private static void TestPrefaceFacade() {
+            var testPrefaceFacade = container.Resolve<TestPrefaceFacade>();
+            
+            
+        }
+
+        private static void TestThematicFielFacade() {
+            var thematicFieldFacade = container.Resolve<ThematicFieldFacade>();
+            
+            
         }
 
         private static void PerformStartup() {
-
             container = new WindsorContainer();
             container.Install(new Installer());
         }
-
-
     }
-
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Riganti.Utils.Infrastructure.Core;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 using BL.DTOs;
 using DAL.Entities;
-using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Queries {
     public class StudentListQuery : AppQuery<StudentDTO> {
@@ -15,7 +11,7 @@ namespace BL.Queries {
 
         protected override IQueryable<StudentDTO> GetQueryable() {
             IQueryable<Student> query = Context.Students;
-            return query.ProjectTo<StudentDTO>();
+            return query.ProjectTo<StudentDTO>().AsQueryable();
         }
     }
 }

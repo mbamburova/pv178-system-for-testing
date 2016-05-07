@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 using BL.DTOs;
 using BL.Queries;
@@ -14,6 +12,8 @@ namespace BL.Facades {
 
         public AnswerRepository Repository { get; set; }
         public AnswerListQuery AnswerListQuery { get; set; }
+
+
 
         protected IQuery<AnswerDTO> CreateQuery() {
             var query = AnswerListQuery;

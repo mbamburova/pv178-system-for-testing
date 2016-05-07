@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace DAL.Entities {

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 using BL.DTOs;
 using BL.Queries;
@@ -15,8 +12,10 @@ namespace BL.Facades {
         public StudentRepository Repository { get; set; }
         public StudentListQuery StudentListQuery { get; set; }
 
+
         protected IQuery<StudentDTO> CreateQuery() {
             var query = StudentListQuery;
+            
             return query;
         }
 
@@ -32,10 +31,14 @@ namespace BL.Facades {
                 return CreateQuery().Execute().ToList();
             }
         }
+        /*
+        public List<StudentDTO> GetStudentsByStudentsGroups(int studentGroup) {
+            //throw new NotImplementedException();
+            using (var uow = UnitOfWorkProvider.Create()) {
 
-        public List<StudentDTO> GetStudentsByStudentsGroups() {
-            throw new NotImplementedException();
-        } 
 
-    }
+                return CreateQuery(new StudentGroupDTO {Id = studentGroup}).Execute().ToList();
+            }
+        }*/
+    } 
 }

@@ -1,31 +1,31 @@
-﻿using BL.DTOs;
+﻿using AutoMapper;
+using BL.DTOs;
 using DAL.Entities;
-using static AutoMapper.Mapper;
 
 namespace BL {
     public class Mapping {
         public static void Create() {
 
-            CreateMap<Answer, AnswerDTO>();
-            CreateMap<AnswerDTO, Answer>();
+            Mapper.CreateMap<Answer, AnswerDTO>();
+            Mapper.CreateMap<AnswerDTO, Answer>();
 
-            CreateMap<Question, QuestionDTO>();
-            CreateMap<QuestionDTO, Question>();
+            Mapper.CreateMap<Question, QuestionDTO>();
+            Mapper.CreateMap<QuestionDTO, Question>();
 
-            CreateMap<Student, StudentDTO>();
-            CreateMap<StudentDTO, Student>();
+            Mapper.CreateMap<Student, StudentDTO>();
+            Mapper.CreateMap<StudentDTO, Student>();
 
-            CreateMap<StudentGroup, StudentGroupDTO>();
-            CreateMap<StudentGroupDTO, StudentGroup>();
+            Mapper.CreateMap<StudentGroup, StudentGroupDTO>();
+            Mapper.CreateMap<StudentGroupDTO, StudentGroup>();
 
-            CreateMap<Teacher, TeacherDTO>();
-            CreateMap<TeacherDTO, Teacher>();
+            Mapper.CreateMap<Teacher, TeacherDTO>();
+            Mapper.CreateMap<TeacherDTO, Teacher>();
 
-            CreateMap<TestPreface, TestPrefaceDTO>();
-            CreateMap<TestPrefaceDTO, TestPreface>();
+            Mapper.CreateMap<TestPreface, TestPrefaceDTO>();
+            Mapper.CreateMap<TestPrefaceDTO, TestPreface>();
 
-            CreateMap<ThematicField, ThematicFieldDTO>();
-            CreateMap<ThematicFieldDTO, ThematicField>();
+            Mapper.CreateMap<ThematicField, ThematicFieldDTO>();
+            Mapper.CreateMap<ThematicFieldDTO, ThematicField>();
         }
     }
 }

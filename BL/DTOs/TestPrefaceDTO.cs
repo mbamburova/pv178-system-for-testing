@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs {
     public class TestPrefaceDTO {
@@ -17,15 +12,15 @@ namespace BL.DTOs {
 
         public virtual StudentGroupDTO StudentGroups { get; set; }
 
-        public virtual List<ThematicFieldDTO> ThematicFields { get; set; }
+       // public virtual List<ThematicFieldDTO> ThematicFields { get; set; }
 
         public virtual TeacherDTO Teacher { get; set; }
 
         public int NumberOfQuestions { get; set; }
 
-        public TestPrefaceDTO() {
+      /*  public TestPrefaceDTO() {
             ThematicFields = new List<ThematicFieldDTO>();
-        }
+        }*/
 
         public override string ToString() {
             return $"TestPrefaceDTO: {Name}";

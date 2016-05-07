@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DAL.Entities;
-
+﻿
 namespace DAL {
-    class DataInitializer : CreateDatabaseIfNotExists<StudentsContext> {
+    /*
+    class DataInitializer : DropCreateDatabaseAlways<StudentsContext> {
 
         protected override void Seed(StudentsContext context) {
             
@@ -62,4 +56,5 @@ namespace DAL {
             base.Seed(context);
         }
     }
+    */
 }

@@ -1,12 +1,11 @@
-﻿using System;
-using Castle.MicroKernel.Registration;
+﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using DAL;
 using Riganti.Utils.Infrastructure.Core;
 using Riganti.Utils.Infrastructure.EntityFramework;
+using System;
 using System.Data.Entity;
-using Component = Castle.MicroKernel.Registration.Component;
 
 namespace BL {
     public class Installer : IWindsorInstaller {

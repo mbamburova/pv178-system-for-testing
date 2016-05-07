@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 using DAL.Entities;
 
 namespace DAL {
@@ -18,9 +13,9 @@ namespace DAL {
         public DbSet<Answer> Answers { get; set; }
 
         public StudentsContext() : base() {
-          //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
+         //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
           //????
-          Database.SetInitializer(new DataInitializer());
+         // Database.SetInitializer(new DataInitializer());
         }
     }
 }
