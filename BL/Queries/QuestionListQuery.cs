@@ -22,7 +22,6 @@ namespace BL.Queries {
             if (Filter.AnswerId > 0) {
                 query = Context.Questions.Where(s => s.Answers.Any(c => c.Id == Filter.AnswerId));
             }
-
             return query.ProjectTo<QuestionDTO>();
         }
     }

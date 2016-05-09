@@ -36,5 +36,4 @@ namespace BL.Facades {
             throw new NotImplementedException();
         }
     }
-
 }

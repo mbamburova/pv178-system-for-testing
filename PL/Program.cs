@@ -6,6 +6,7 @@ using Castle.Windsor;
 
 namespace PL {
     class Program {
+
         private static IWindsorContainer container;
 
         static void Main(string[] args) {
@@ -24,6 +25,7 @@ namespace PL {
             
             var allStudents = studentFacade.GetAllStudents();
             var studentWithId58 = studentFacade.GetStudentById(58);
+            var studentsWithStudentGroupId39 = studentFacade.GetStudentsByStudentGroup(39);
 
             //create student
             Console.WriteLine("New student");
@@ -34,8 +36,6 @@ namespace PL {
             var studentWithId57 = studentFacade.GetStudentById(57);
             studentWithId57.Name = "Jana(Jano)";
             studentFacade.UpdateStudent(studentWithId57, 39);
-
-            var studentsWithStudentGroupId39 = studentFacade.GetStudentsByStudentGroup(39);
         }
 
         private static void TestAnswerFacade() {
@@ -44,17 +44,15 @@ namespace PL {
             var allAnswers = answerFacade.GetAllAnswers();
             var answerWithId12 = answerFacade.GetAswerById(12);
             var allAnswersByQuestionWithId6 = answerFacade.GetAnswersByQuestion(6);
-
         }
 
         private static void TestQuestionFacade() {
             var questionFacade = container.Resolve<QuestionFacade>();
 
-            //nefunguje:(
-            var allQuestions = questionFacade.GetAllQuestions();
-
-            //funguje:)
             var questionWithId7 = questionFacade.GetQuestionById(7);
+
+            //nefunguje:(
+            var allQuestions = questionFacade.GetAllQuestions();            
         }
 
         private static void TestStudentGroupFacade() {
@@ -63,12 +61,12 @@ namespace PL {
             var allStudentsGroups = studentGroupFacade.GetAllStudentGroups();
 
             var studentGroupWithId40 = studentGroupFacade.GetStudentGroupById(40);
-
-
-          /*  studentGroupWithId40.Name = "skupina po update";
-            studentGroupFacade.UpdateStudentGroup(studentGroupWithId40, null);
-            */
-            //var updatedStudentGroup = studentGroupFacade.UpdateStudentGroup();
+        
+          /* not implemented
+          studentGroupWithId40.Name = "skupina po update";
+          studentGroupFacade.UpdateStudentGroup(studentGroupWithId40, null);
+          var updatedStudentGroup = studentGroupFacade.UpdateStudentGroup();
+          */
         }
 
         private static void TestPrefaceFacade() {
@@ -76,7 +74,6 @@ namespace PL {
 
             var allTestPrefaces = testPrefaceFacade.GetAllTestPrefaces();
             var testPrefaceWithWithId6 = testPrefaceFacade.GetTestPrefaceById(6);
-            //var testPrefacesWithStudentGroup = testPrefaceFacade.GetTestPrefacesByStudentGroup();
         }
 
         private static void TestThematicFielFacade() {
@@ -84,8 +81,6 @@ namespace PL {
 
             var allThematicFields = thematicFieldFacade.GetAllThematicFields();
             var thematicFieldWithId5 = thematicFieldFacade.GetThematicFieldById(5);
-        
-          //  var allChildrenWithParentId2 = thematicFieldFacade.GetAllThematicFieldsById();
         }
 
         private static void PerformStartup() {

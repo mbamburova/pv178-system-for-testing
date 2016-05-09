@@ -11,8 +11,6 @@ using Riganti.Utils.Infrastructure.Core;
 namespace BL.Facades {
     public class StudentGroupFacade : AppFacadeBase {
 
-       // public StudentRepository StudentRepository { get; set; }
-
         public StudentGroupRepository Repository { get; set; }
         public StudentGroupListQuery StudentGroupListQuery { get; set; }
 
@@ -29,7 +27,7 @@ namespace BL.Facades {
         }
         
         public void UpdateStudentGroup(StudentGroupDTO studentGroup, int[] selectedStudents) {
-            throw new NotImplementedException();
+             throw new NotImplementedException();
         }
 
         public StudentGroupDTO GetStudentGroupById(int sgId) {

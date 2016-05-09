@@ -34,7 +34,5 @@ namespace BL.Facades {
         public List<TestPrefaceDTO> GetTestPrefacesByStudentGroup() {
             throw new NotImplementedException();
         } 
-
-
     }
 }

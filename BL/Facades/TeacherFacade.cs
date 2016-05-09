@@ -6,6 +6,7 @@ using Riganti.Utils.Infrastructure.Core;
 namespace BL.Facades {
 
     public class TeacherFacade : AppFacadeBase {
+
         public TeacherRepository Repository { get; set; }
         public TeacherListQuery TeacherListQuery { get; set; }
 
@@ -13,8 +14,5 @@ namespace BL.Facades {
             var query = TeacherListQuery;
             return query;
         }
-
-
-
     }
 }
