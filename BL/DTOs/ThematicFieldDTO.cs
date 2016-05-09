@@ -14,13 +14,15 @@ namespace BL.DTOs {
 
         public ThematicFieldDTO Parent { get; set; }
 
-     //   public virtual List<ThematicFieldDTO> Others { get; set; }
+        public virtual TestPrefaceDTO TestPreface { get; set; }
 
-     /*   public ThematicFieldDTO() {
-            Questions = new List<QuestionDTO>();
-            Others = new List<ThematicFieldDTO>();
-        }
-        */
+        //   public virtual List<ThematicFieldDTO> Childrens { get; set; }
+
+        /*   public ThematicFieldDTO() {
+               Questions = new List<QuestionDTO>();
+               Others = new List<ThematicFieldDTO>();
+           }
+           */
         public override string ToString() {
             return $"ThematicFieldDTO: {Name}";
         }

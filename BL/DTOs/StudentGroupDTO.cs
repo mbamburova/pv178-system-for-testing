@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using DAL.Entities;
 
 namespace BL.DTOs {
     public class StudentGroupDTO {
@@ -11,9 +13,12 @@ namespace BL.DTOs {
 
         public virtual TeacherDTO Teacher { get; set; }
 
-       /* public StudentGroupDTO() {
-            Students = new List<StudentDTO>();
-        }*/
+       // public virtual List<TestPrefaceDTO> TestPrefaces { get; set; }
+
+        /* public StudentGroupDTO() {
+             Students = new List<StudentDTO>();
+             TestPrefaces = new List<TestPrefaces>();
+         }*/
 
         public override string ToString() {
             return Name;
