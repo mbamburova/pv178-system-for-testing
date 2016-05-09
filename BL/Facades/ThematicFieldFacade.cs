@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using BL.DTOs;
@@ -29,5 +30,9 @@ namespace BL.Facades {
                 return Mapper.Map<ThematicFieldDTO>(thematicField);
             }
         }
+
+        public List<ThematicFieldDTO> GetAllThematicFieldsById() {
+            throw new NotImplementedException();
+        } 
     }
 }

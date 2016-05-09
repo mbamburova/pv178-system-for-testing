@@ -18,7 +18,7 @@ namespace BL.DTOs {
 
         public int NumberOfQuestions { get; set; }
 
-      /*  public TestPrefaceDTO() {
+       /* public TestPrefaceDTO() {
             ThematicFields = new List<ThematicFieldDTO>();
         }*/
 

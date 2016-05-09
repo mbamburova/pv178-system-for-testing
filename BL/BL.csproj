@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{32F12F08-3165-4CE9-8A07-F2BF0B2840F5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BL</RootNamespace>
     <AssemblyName>BL</AssemblyName>
@@ -82,7 +82,9 @@
     <Compile Include="DTOs\AnswerDTO.cs" />
     <Compile Include="DTOs\QuestionDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="DTOs\StudentFilter.cs" />
     <Compile Include="DTOs\StudentGroupDTO.cs" />
+    <Compile Include="DTOs\StudentGroupFilter.cs" />
     <Compile Include="DTOs\TeacherDTO.cs" />
     <Compile Include="DTOs\TestPrefaceDTO.cs" />
     <Compile Include="DTOs\ThematicFieldDTO.cs" />

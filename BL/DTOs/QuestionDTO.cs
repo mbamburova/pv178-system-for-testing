@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BL.DTOs {
     public class QuestionDTO {
         public int Id { get; set; }
-        //SO Exception
+
        // public List<AnswerDTO> Answers { get; set; }
 
         [Required]
@@ -11,17 +12,17 @@ namespace BL.DTOs {
         
         public int Points { get; set; }
 
-        public ThematicFieldDTO ThematicField { get; set; }
+        //public ThematicFieldDTO ThematicField { get; set; }
 
         [MaxLength(200)]
         public string Note { get; set; }
 
-      /*  public QuestionDTO() {
+       /* public QuestionDTO() {
             Answers = new List<AnswerDTO>();
         }*/
 
         public override string ToString() {
-            return $"Question with ID: {Id}";
+            return $"QuestionDTO with ID: {Id}";
         }
     }
 }

@@ -13,21 +13,22 @@ namespace BL.Facades {
         public QuestionRepository Repository { get; set; }
         public QuestionListQuery QuestionListQuery { get; set; }
 
-        protected IQuery<QuestionDTO> CreateQuery() {
+        protected IQuery<QuestionDTO> CreateQuery(StudentFilter filter) {
             var query = QuestionListQuery;
+            query.Filter = filter;
             return query;
         }
 
         public List<QuestionDTO> GetAllQuestions() {
             using (UnitOfWorkProvider.Create()) {
-                return CreateQuery().Execute().ToList();
+                return CreateQuery(new StudentFilter { }).Execute().ToList();
             }
         }
 
         public QuestionDTO GetQuestionById(int questionId) {
             using (UnitOfWorkProvider.Create()) {
-                var order = Repository.GetById(questionId);
-                return Mapper.Map<QuestionDTO>(order);
+                var question = Repository.GetById(questionId);
+                return Mapper.Map<QuestionDTO>(question);
             }
         }
 

@@ -14,15 +14,15 @@ namespace BL.Facades {
         public AnswerListQuery AnswerListQuery { get; set; }
 
 
-
-        protected IQuery<AnswerDTO> CreateQuery() {
+        protected IQuery<AnswerDTO> CreateQuery(StudentGroupFilter filter) {
             var query = AnswerListQuery;
+            query.Filter = filter;
             return query;
         }
 
         public List<AnswerDTO> GetAllAnswers() {
             using (var uow = UnitOfWorkProvider.Create()) {
-                return CreateQuery().Execute().ToList();
+                return CreateQuery(new StudentGroupFilter() {}).Execute().ToList();
             }
         }
 
@@ -33,8 +33,10 @@ namespace BL.Facades {
             }
         }
 
-        public List<AnswerDTO> GetAnswersByQuestion() {
-            throw new NotImplementedException();
+        public List<AnswerDTO> GetAnswersByQuestion(int questionId) {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                return CreateQuery(new StudentGroupFilter() {  QuestionId = questionId}).Execute().ToList();
+            }
         }
     }
 }
