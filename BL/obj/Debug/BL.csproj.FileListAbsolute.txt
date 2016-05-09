@@ -19,3 +19,4 @@ C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\De
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\obj\Debug\BL.pdb
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\BL\bin\Debug\BL.exe.config

@@ -1,10 +1,13 @@
-﻿
+﻿using System.Collections.Generic;
+using System.Data.Entity;
+using DAL.Entities;
+
 namespace DAL {
-    /*
+    
     class DataInitializer : DropCreateDatabaseAlways<StudentsContext> {
 
         protected override void Seed(StudentsContext context) {
-            
+          /*  
             var student1 = new Student() {
                 Name = "Jano",
                 Surname = "Maly",
@@ -53,8 +56,8 @@ namespace DAL {
 
             context.SaveChanges();
 
-            base.Seed(context);
+            base.Seed(context);*/
         }
     }
-    */
+    
 }

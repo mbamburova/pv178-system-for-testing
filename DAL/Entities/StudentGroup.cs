@@ -12,9 +12,12 @@ namespace DAL.Entities {
         public virtual List<Student> Students { get; set; }
 
         public virtual Teacher Teacher { get; set; }
+        
+       public virtual List<TestPreface> TestPrefaces { get; set; }
 
         public StudentGroup() {
             Students = new List<Student>();
+            TestPrefaces = new List<TestPreface>();
         }
 
         public override string ToString() {

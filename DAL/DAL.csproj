@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{46387EDD-2F62-49FA-A2C7-3F1F6D84476B}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAL</RootNamespace>
     <AssemblyName>DAL</AssemblyName>
@@ -88,6 +88,42 @@
     <Compile Include="Migrations\201605031000122_added attribute in Answer.Designer.cs">
       <DependentUpon>201605031000122_added attribute in Answer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605090730238_correct.cs" />
+    <Compile Include="Migrations\201605090730238_correct.Designer.cs">
+      <DependentUpon>201605090730238_correct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090732566_correct1.cs" />
+    <Compile Include="Migrations\201605090732566_correct1.Designer.cs">
+      <DependentUpon>201605090732566_correct1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090735304_correct2.cs" />
+    <Compile Include="Migrations\201605090735304_correct2.Designer.cs">
+      <DependentUpon>201605090735304_correct2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090736531_correct3.cs" />
+    <Compile Include="Migrations\201605090736531_correct3.Designer.cs">
+      <DependentUpon>201605090736531_correct3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090741068_correct4.cs" />
+    <Compile Include="Migrations\201605090741068_correct4.Designer.cs">
+      <DependentUpon>201605090741068_correct4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090741282_correct5.cs" />
+    <Compile Include="Migrations\201605090741282_correct5.Designer.cs">
+      <DependentUpon>201605090741282_correct5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090746411_correct6.cs" />
+    <Compile Include="Migrations\201605090746411_correct6.Designer.cs">
+      <DependentUpon>201605090746411_correct6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090747402_correct7.cs" />
+    <Compile Include="Migrations\201605090747402_correct7.Designer.cs">
+      <DependentUpon>201605090747402_correct7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605090825264_required Text of Answer.cs" />
+    <Compile Include="Migrations\201605090825264_required Text of Answer.Designer.cs">
+      <DependentUpon>201605090825264_required Text of Answer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +145,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605031000122_added attribute in Answer.resx">
       <DependentUpon>201605031000122_added attribute in Answer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090730238_correct.resx">
+      <DependentUpon>201605090730238_correct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090732566_correct1.resx">
+      <DependentUpon>201605090732566_correct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090735304_correct2.resx">
+      <DependentUpon>201605090735304_correct2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090736531_correct3.resx">
+      <DependentUpon>201605090736531_correct3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090741068_correct4.resx">
+      <DependentUpon>201605090741068_correct4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090741282_correct5.resx">
+      <DependentUpon>201605090741282_correct5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090746411_correct6.resx">
+      <DependentUpon>201605090746411_correct6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090747402_correct7.resx">
+      <DependentUpon>201605090747402_correct7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605090825264_required Text of Answer.resx">
+      <DependentUpon>201605090825264_required Text of Answer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

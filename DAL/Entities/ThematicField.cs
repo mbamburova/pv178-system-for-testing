@@ -15,11 +15,13 @@ namespace DAL.Entities {
 
         public ThematicField Parent { get; set; }
 
-        public virtual List<ThematicField> Others { get; set; }
+        public virtual List<ThematicField> Childrens { get; set; }
+
+        public virtual TestPreface TestPreface { get; set; }
 
         public ThematicField() {
             Questions = new List<Question>();
-            Others = new List<ThematicField>();
+            Childrens = new List<ThematicField>();
         }
 
         public override string ToString() {

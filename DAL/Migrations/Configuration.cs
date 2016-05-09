@@ -1,5 +1,8 @@
 
 
+using System.Collections.Generic;
+using DAL.Entities;
+
 namespace DAL.Migrations
 {
     using System.Data.Entity.Migrations;
@@ -28,7 +31,7 @@ namespace DAL.Migrations
             //    );
             //
 
-            /* udaje sa ulozia do tabuliek
+            // udaje sa ulozia do tabuliek
             var student1 = new Student() {
                 Name = "Jano",
                 Surname = "Maly",
@@ -49,25 +52,122 @@ namespace DAL.Migrations
                 Surname = "Biely"
             };
 
+
+
+
+
+            var answer1 = new Answer() {
+
+                Text = "Ano",
+                IsCorrect = true,
+            };
+
+            var answer2 = new Answer() {
+                Text = "Nie",
+                IsCorrect = false,
+            };
+
+            var question1 = new Question() {
+                Answers = new List<Answer>() { answer1, answer2 },
+                Text = "Delime siete podla funkcneho vztahu na Client-Server a Peer-to-Peer?",
+                Points = 2,
+            };
+
+
+            var thematicField1 = new ThematicField() {
+                Name = "okruh sieti",
+                Questions = new List<Question>() { question1 },
+                Childrens = new List<ThematicField>() { }
+            };
+
+            var testPreface1 = new TestPreface() {
+                Name = "Test Siete",
+                TimeInMinutes = 60,
+                ThematicFields = new List<ThematicField>() { thematicField1 },
+                NumberOfQuestions = 1
+            };
+
+
+
+            var answer3 = new Answer() {
+
+                Text = "Ano",
+                IsCorrect = true,
+            };
+
+            var answer4 = new Answer() {
+                Text = "Nie",
+                IsCorrect = false,
+            };
+
+            var question2 = new Question() {
+                Answers = new List<Answer>() { answer3, answer4 },
+                Text = "Uci Brandejs UNIX?",
+                Points = 2,
+            };
+
+
+            var thematicField2 = new ThematicField() {
+                Name = "okruh unix",
+                Questions = new List<Question>() { question2 },
+                Childrens = new List<ThematicField>() { }
+            };
+
+            var testPreface2 = new TestPreface() {
+                Name = "Test unix",
+                TimeInMinutes = 60,
+                ThematicFields = new List<ThematicField>() { thematicField2 },
+                NumberOfQuestions = 1
+            };
+
             var studentGroup1 = new StudentGroup() {
                 Name = "skupina 1",
-                Students = new List<Student>() { student1, student2, student3 }
+                Students = new List<Student>() { student1, student2, student3 },
+                TestPrefaces = new List<TestPreface>() { testPreface1}
             };
 
             var studentGroup2 = new StudentGroup() {
                 Name = "skupina 2",
-                Students = new List<Student>() { student4 }
+                Students = new List<Student>() { student4 },
+                TestPrefaces = new List<TestPreface>() { testPreface2 }
             };
 
-            context.Students.Add(student1);
-            context.Students.Add(student2);
-            context.Students.Add(student3);
-            context.Students.Add(student4);
 
-            context.StudentGroups.Add(studentGroup1);
-            context.StudentGroups.Add(studentGroup2);
+            var teacher = new Teacher() {
+                Name = "ucitel z FI MUNI",
+                StudentGroups = new List<StudentGroup>() { studentGroup1, studentGroup2 },
+                TestPrefaces = new List<TestPreface>() {testPreface1, testPreface2 },
+                ThematicFields = new List<ThematicField>() {thematicField1, thematicField2 }
+            };
 
-            context.SaveChanges();*/
+
+
+            context.Students.AddOrUpdate(student1);
+            context.Students.AddOrUpdate(student2);
+            context.Students.AddOrUpdate(student3);
+            context.Students.AddOrUpdate(student4);
+
+            context.StudentGroups.AddOrUpdate(studentGroup1);
+            context.StudentGroups.AddOrUpdate(studentGroup2);
+
+            context.Answers.AddOrUpdate(answer1);
+            context.Answers.AddOrUpdate(answer2);
+            context.Answers.AddOrUpdate(answer3);
+            context.Answers.AddOrUpdate(answer4);
+
+            context.Questions.AddOrUpdate(question1);
+            context.Questions.AddOrUpdate(question2);
+
+            context.Teachers.AddOrUpdate(teacher);
+
+            context.TestPrefaces.AddOrUpdate(testPreface1);
+            context.TestPrefaces.AddOrUpdate(testPreface2);
+
+            context.ThematicFields.AddOrUpdate(thematicField1);
+            context.ThematicFields.AddOrUpdate(thematicField2);
+
+
+            context.SaveChanges();
         }
     }
 }

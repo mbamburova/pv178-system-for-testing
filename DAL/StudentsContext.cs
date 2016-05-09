@@ -15,7 +15,7 @@ namespace DAL {
         public StudentsContext() : base() {
          //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
           //????
-         // Database.SetInitializer(new DataInitializer());
+          Database.SetInitializer(new DataInitializer());
         }
     }
 }
