@@ -1,0 +1,26 @@
+﻿@model WEB.Models.StudentGroupViewModel
+
+@{
+    ViewBag.Title = "StudentGroups";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Student groups:</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+    </tr>
+
+    @foreach (var item in Model.StudentGroups) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+        </tr>
+    }
+
+</table>
+

@@ -3,42 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BL.DTOs;
 using BL.Facades;
 using WEB.Models;
 
 namespace WEB.Controllers
 {
-    public class HomeController : Controller {
-        private readonly StudentGroupFacade studentGroupFacade;
-        private readonly ThematicFieldFacade thematicFieldFacade;
+    public class StudentGoupController : Controller {
 
-        public HomeController(StudentGroupFacade studentGroupFacade, ThematicFieldFacade thematicFieldFacade) {
+        private readonly StudentGroupFacade studentGroupFacade;
+
+
+        public StudentGoupController(StudentGroupFacade studentGroupFacade) {
             this.studentGroupFacade = studentGroupFacade;
-            this.thematicFieldFacade = thematicFieldFacade;
         }
 
-
-
-        // GET: Home
+        public ActionResult StudentGroups() {
+            var studentGroupViewModel = new StudentGroupViewModel() {
+                StudentGroups = studentGroupFacade.GetAllStudentGroups()
+            };
+            return View("StudentGroups", studentGroupViewModel);
+        }
+        /*
+        // GET: StudentGoup
         public ActionResult Index()
         {
             return View();
         }
-        /*
-        // GET: Home/Details/5
+
+        // GET: StudentGoup/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Home/Create
+        // GET: StudentGoup/Create
         public ActionResult Create()
         {
-            
             return View();
         }
 
-        // POST: Home/Create
+        // POST: StudentGoup/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -54,13 +59,13 @@ namespace WEB.Controllers
             }
         }
 
-        // GET: Home/Edit/5
+        // GET: StudentGoup/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Home/Edit/5
+        // POST: StudentGoup/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -76,13 +81,13 @@ namespace WEB.Controllers
             }
         }
 
-        // GET: Home/Delete/5
+        // GET: StudentGoup/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Home/Delete/5
+        // POST: StudentGoup/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
@@ -95,7 +100,6 @@ namespace WEB.Controllers
             catch
             {
                 return View();
-            }
-        }*/
-    }
+            }*/
+        }
 }
