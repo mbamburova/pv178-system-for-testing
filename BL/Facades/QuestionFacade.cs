@@ -13,7 +13,7 @@ namespace BL.Facades {
         public QuestionRepository Repository { get; set; }
         public QuestionListQuery QuestionListQuery { get; set; }
 
-        protected IQuery<QuestionDTO> CreateQuery(StudentFilter filter) {
+        protected IQuery<QuestionDTO> CreateQuery(QuestionFilter filter) {
             var query = QuestionListQuery;
             query.Filter = filter;
             return query;
@@ -21,7 +21,7 @@ namespace BL.Facades {
 
         public List<QuestionDTO> GetAllQuestions() {
             using (UnitOfWorkProvider.Create()) {
-                return CreateQuery(new StudentFilter { }).Execute().ToList();
+                return CreateQuery(new QuestionFilter { }).Execute().ToList();
             }
         }
 
@@ -32,8 +32,11 @@ namespace BL.Facades {
             }
         }
 
-        public List<QuestionDTO> GetQuestionsByThematicField() {
-            throw new NotImplementedException();
+        public List<QuestionDTO> GetQuestionsByThematicField(int thematicFieldId) {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                return CreateQuery(new QuestionFilter() { ThematicFieldId = thematicFieldId }).Execute().ToList();
+            }
+
         }
     }
 }

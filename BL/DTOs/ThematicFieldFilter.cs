@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.DTOs {
-    class ThematicFieldFilter {
+    public class ThematicFieldFilter {
 
         public int QuestionId { get; set; }
     }

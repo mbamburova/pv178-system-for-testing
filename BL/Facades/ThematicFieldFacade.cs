@@ -13,14 +13,15 @@ namespace BL.Facades {
         public ThematicFieldRepository Repository { get; set; }
         public ThematicFieldListQuery ThematicFieldListQuery { get; set; }
 
-        protected IQuery<ThematicFieldDTO> CreateQuery() {
+        protected IQuery<ThematicFieldDTO> CreateQuery(ThematicFieldFilter filter) {
             var query = ThematicFieldListQuery;
+            query.Filter = filter;
             return query;
         }
 
         public List<ThematicFieldDTO> GetAllThematicFields() {
             using (UnitOfWorkProvider.Create()) {
-                return CreateQuery().Execute().ToList();
+                return CreateQuery(new ThematicFieldFilter() { }).Execute().ToList();
             }
         }
 

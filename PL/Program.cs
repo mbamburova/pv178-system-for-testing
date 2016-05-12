@@ -51,6 +51,8 @@ namespace PL {
 
             var questionWithId7 = questionFacade.GetQuestionById(7);
 
+            var questionsByThematicFieldWithId6 = questionFacade.GetQuestionsByThematicField(6);
+
             //nefunguje:(
             var allQuestions = questionFacade.GetAllQuestions();            
         }
@@ -63,7 +65,7 @@ namespace PL {
             var studentGroupWithId40 = studentGroupFacade.GetStudentGroupById(40);
         
           /* not implemented
-          studentGroupWithId40.Name = "skupina po update";
+          studentGroupWithId40.Name = "skupina pro update";
           studentGroupFacade.UpdateStudentGroup(studentGroupWithId40, null);
           var updatedStudentGroup = studentGroupFacade.UpdateStudentGroup();
           */

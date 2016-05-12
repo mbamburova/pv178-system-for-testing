@@ -11,8 +11,8 @@ namespace BL.DTOs {
 
         public int StudentGroupId { get; set; }
 
-        public int AnswerId { get; set; }
+        //public int AnswerId { get; set; }
 
-        public string QuestionText { get; set; }
+      //  public string QuestionText { get; set; }
     }
 }

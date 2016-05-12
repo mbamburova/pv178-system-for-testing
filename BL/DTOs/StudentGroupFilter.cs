@@ -9,6 +9,6 @@ namespace BL.DTOs {
 
         public int StudentId { get; set; }
 
-        public int QuestionId { get; set; }
+       // public int QuestionId { get; set; }
     }
 }

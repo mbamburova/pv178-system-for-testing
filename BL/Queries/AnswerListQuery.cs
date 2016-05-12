@@ -7,7 +7,7 @@ using DAL.Entities;
 namespace BL.Queries {
     public class AnswerListQuery : AppQuery<AnswerDTO> {
 
-        public StudentGroupFilter Filter { get; set; }
+        public QuestionFilter Filter { get; set; }
         public AnswerListQuery(IUnitOfWorkProvider provider) : base(provider) {
 
         }

@@ -7,7 +7,7 @@ using DAL.Entities;
 namespace BL.Queries {
     public class QuestionListQuery : AppQuery<QuestionDTO> {
 
-        public StudentFilter Filter { get; set; }
+        public QuestionFilter Filter { get; set; }
         public QuestionListQuery(IUnitOfWorkProvider provider) : base(provider) {
             
         }
@@ -21,6 +21,10 @@ namespace BL.Queries {
 
             if (Filter.AnswerId > 0) {
                 query = Context.Questions.Where(s => s.Answers.Any(c => c.Id == Filter.AnswerId));
+            }
+
+            if (Filter.ThematicFieldId > 0) {
+                query = Context.Questions.Where(s => s.ThematicField.Id == Filter.ThematicFieldId);
             }
             return query.ProjectTo<QuestionDTO>();
         }

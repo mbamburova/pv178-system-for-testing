@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BL.DTOs {
-    class QuestionFilter {
+    public class QuestionFilter {
         public string QuestionText { get; set; }
 
         public int ThematicFieldId { get; set; }
+
+        public int AnswerId { get; set; }
+
+        public int QuestionId { get; set; }
 
     }
 }

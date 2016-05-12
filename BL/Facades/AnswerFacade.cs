@@ -14,7 +14,7 @@ namespace BL.Facades {
         public AnswerListQuery AnswerListQuery { get; set; }
 
 
-        protected IQuery<AnswerDTO> CreateQuery(StudentGroupFilter filter) {
+        protected IQuery<AnswerDTO> CreateQuery(QuestionFilter filter) {
             var query = AnswerListQuery;
             query.Filter = filter;
             return query;
@@ -22,7 +22,7 @@ namespace BL.Facades {
 
         public List<AnswerDTO> GetAllAnswers() {
             using (var uow = UnitOfWorkProvider.Create()) {
-                return CreateQuery(new StudentGroupFilter() {}).Execute().ToList();
+                return CreateQuery(new QuestionFilter {}).Execute().ToList();
             }
         }
 
@@ -35,7 +35,7 @@ namespace BL.Facades {
 
         public List<AnswerDTO> GetAnswersByQuestion(int questionId) {
             using (var uow = UnitOfWorkProvider.Create()) {
-                return CreateQuery(new StudentGroupFilter() {  QuestionId = questionId}).Execute().ToList();
+                return CreateQuery(new QuestionFilter() {  QuestionId = questionId}).Execute().ToList();
             }
         }
     }
