@@ -6,5 +6,9 @@ using System.Threading.Tasks;
 
 namespace BL.DTOs {
     class QuestionFilter {
+        public string QuestionText { get; set; }
+
+        public int ThematicFieldId { get; set; }
+
     }
 }

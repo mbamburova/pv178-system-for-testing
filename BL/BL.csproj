@@ -81,6 +81,7 @@
     <Compile Include="AppUnitOfWorkProvider.cs" />
     <Compile Include="DTOs\AnswerDTO.cs" />
     <Compile Include="DTOs\QuestionDTO.cs" />
+    <Compile Include="DTOs\QuestionFilter.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="DTOs\StudentFilter.cs" />
     <Compile Include="DTOs\StudentGroupDTO.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="DTOs\TeacherDTO.cs" />
     <Compile Include="DTOs\TestPrefaceDTO.cs" />
     <Compile Include="DTOs\ThematicFieldDTO.cs" />
+    <Compile Include="DTOs\ThematicFieldFilter.cs" />
     <Compile Include="Facades\AnswerFacade.cs" />
     <Compile Include="Facades\QuestionFacade.cs" />
     <Compile Include="Facades\StudentFacade.cs" />
