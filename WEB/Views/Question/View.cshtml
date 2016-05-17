@@ -1,0 +1,36 @@
+﻿@model WEB.Models.QuestionViewModel
+
+<h2>Questions from thematic field </h2>
+<p>
+    @Html.ActionLink("Add new question", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>Text of question</th>
+        <th>Show right answer</th>
+        <th>Edit question</th>
+        <th>Delete question</th>
+    </tr>
+
+    @foreach (var item in Model.Questions) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.ActionLink("Answer", "Index", "Answers", new { id = item.Id }, null)
+            </td>
+            <td>
+                @Html.ActionLink("Edit question", "Edit", new {id = item.Id})
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to thematic fields", "ThematicFields", "ThematicField")
+</div>

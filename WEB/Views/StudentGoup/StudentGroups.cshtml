@@ -5,12 +5,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Student groups:</h2>
+<h2>Our student groups:</h2>
 
 <table class="table">
     <tr>
         <th>
             Name
+        </th>
+        <th>
+            Students
         </th>
     </tr>
 
@@ -19,8 +22,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
+            <td>
+                @Html.ActionLink("See the students", "Index", "Student", new {id = item.Id}, null)
+            </td>
         </tr>
     }
 
 </table>
+<div>
+    @Html.ActionLink("Back to home", "Index", "Home")
+</div>
 
