@@ -12,7 +12,7 @@ namespace BL.DTOs {
         
         public int Points { get; set; }
 
-        //public ThematicFieldDTO ThematicField { get; set; }
+        public ThematicFieldDTO ThematicField { get; set; }
 
         [MaxLength(200)]
         public string Note { get; set; }

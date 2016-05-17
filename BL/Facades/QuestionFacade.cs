@@ -36,7 +36,13 @@ namespace BL.Facades {
             using (var uow = UnitOfWorkProvider.Create()) {
                 return CreateQuery(new QuestionFilter() { ThematicFieldId = thematicFieldId }).Execute().ToList();
             }
+        }
 
+        public void DeleteQuestion(int questionId) {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                Repository.Delete(questionId);
+                uow.Commit();
+            }
         }
     }
 }

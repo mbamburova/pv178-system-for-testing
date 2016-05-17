@@ -11,7 +11,7 @@ namespace BL.DTOs {
         [MaxLength(30)]
         public string Surname { get; set; }
 
-        //public StudentGroupDTO StudentGroup { get; set; }
+        public StudentGroupDTO StudentGroup { get; set; }
 
         public override string ToString() => $"StudentDTO {Name} {Surname}, with id: {Id}";
     }

@@ -80,7 +80,8 @@ namespace WEB.Controllers
         // GET: Question/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            questionFacade.DeleteQuestion(id);
+            return View("View", CreateQuestionViewModel(id));
         }
 
         // POST: Question/Delete/5

@@ -82,7 +82,9 @@ namespace WEB.Controllers
         // GET: Student/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+           // var studentsGroupId = studentFacade.GetStudentById(id).StudentGroup.Id;
+            studentFacade.DeleteStudent(id);
+            return View("View", CreateStudentViewModel(id));
         }
 
         // POST: Student/Delete/5

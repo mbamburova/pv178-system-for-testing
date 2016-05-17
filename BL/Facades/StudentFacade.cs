@@ -10,7 +10,7 @@ using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Facades {
     public class StudentFacade : AppFacadeBase {
-        
+
         public StudentGroupRepository StudentGroupRepository { get; set; }
 
         public StudentRepository Repository { get; set; }
@@ -35,7 +35,7 @@ namespace BL.Facades {
                 return CreateQuery(new StudentFilter()).Execute().ToList();
             }
         }
-        
+
         public void CreateStudent(StudentDTO student, int studentGroupId) {
 
             using (var uow = UnitOfWorkProvider.Create()) {
@@ -43,7 +43,7 @@ namespace BL.Facades {
 
                 if (studentGroupId > 0) {
                     dalStudent.StudentGroup = StudentGroupRepository.GetById(studentGroupId);
-                }   
+                }
                 Repository.Insert(dalStudent);
                 uow.Commit();
             }
@@ -62,11 +62,18 @@ namespace BL.Facades {
             }
         }
 
-    
+
         public List<StudentDTO> GetStudentsByStudentGroup(int studentGroupId) {
             using (var uow = UnitOfWorkProvider.Create()) {
                 return CreateQuery(new StudentFilter() {StudentGroupId = studentGroupId}).Execute().ToList();
             }
-        } 
-    } 
+        }
+
+        public void DeleteStudent(int studentId) {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                Repository.Delete(studentId);
+                uow.Commit();
+            }
+        }
+    }
 }
