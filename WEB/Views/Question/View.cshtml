@@ -1,4 +1,5 @@
-﻿@model WEB.Models.QuestionViewModel
+﻿@using System.Threading
+@model WEB.Models.QuestionViewModel
 
 <h2>Questions from thematic field </h2>
 <p>
@@ -6,27 +7,31 @@
 </p>
 <table class="table">
     <tr>
+        <th>Question number</th>
         <th>Text of question</th>
-        <th>Show right answer</th>
-        <th>Edit question</th>
-        <th>Delete question</th>
+        <th></th>
+        <th></th>
     </tr>
 
+
+    @{int count = 1;}
     @foreach (var item in Model.Questions) {
         <tr>
+            <td>
+                <p> <%= count%></p>
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Text)
             </td>
             <td>
-                @Html.ActionLink("Answer", "Index", "Answers", new { id = item.Id }, null)
-            </td>
-            <td>
-                @Html.ActionLink("Edit question", "Edit", new {id = item.Id})
-            </td>
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.ActionLink("Show answers", "Index", "Answer", new {id = item.Id}, null) |
+
+                @Html.ActionLink("Edit question", "Edit", new {id = item.Id}) |
+
+                @Html.ActionLink("Delete question", "Delete", new {id = item.Id})
             </td>
         </tr>
+        count++;
     }
 
 </table>

@@ -38,5 +38,12 @@ namespace BL.Facades {
                 return CreateQuery(new QuestionFilter() {  QuestionId = questionId}).Execute().ToList();
             }
         }
+
+        public void DeleteAnswer(int answerId) {
+            using (var uow = UnitOfWorkProvider.Create()) {
+                Repository.Delete(answerId);
+                uow.Commit();
+            }
+        }
     }
 }
