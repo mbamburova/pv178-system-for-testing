@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BL.DTOs;
 using BL.Facades;
 using WEB.Models;
 
@@ -11,6 +12,7 @@ namespace WEB.Controllers
     public class StudentController : Controller {
 
         private readonly StudentFacade studentFacade;
+        private readonly StudentGroupFacade studentGroupFacade;
 
         public StudentController(StudentFacade studentFacade) {
             this.studentFacade = studentFacade;
@@ -36,25 +38,25 @@ namespace WEB.Controllers
         }
 
         // GET: Student/Create
-        public ActionResult Create()
+        public ActionResult Create(int id)
         {
-            return View();
+            return View("Create", CreateStudentEditViewModel());
+        }
+
+        private StudentEditViewModel CreateStudentEditViewModel(StudentDTO student = null) {
+            return new StudentEditViewModel() {
+                Student = student,
+               // AvailableStudentGroups = new SelectList(studentGroupFacade.GetAllStudentGroups(), "Id", "Name"),
+                StudentGroupId = student?.StudentGroup.Id ?? 0
+            };
         }
 
         // POST: Student/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(StudentEditViewModel model)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            studentFacade.CreateStudent(new StudentDTO(), model.StudentGroupId);
+            return View("View", CreateStudentViewModel(model.StudentGroupId));
         }
 
         // GET: Student/Edit/5

@@ -187,6 +187,7 @@
     </Compile>
     <Compile Include="Models\AnswerViewModel.cs" />
     <Compile Include="Models\QuestionViewModel.cs" />
+    <Compile Include="Models\StudentEditViewModel.cs" />
     <Compile Include="Models\StudentGroupViewModel.cs" />
     <Compile Include="Models\StudentViewModel.cs" />
     <Compile Include="Models\ThematicFieldViewModel.cs" />
@@ -236,6 +237,7 @@
     <Content Include="Views\Question\View.cshtml" />
     <Content Include="Views\Student\View.cshtml" />
     <Content Include="Views\Answer\View.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
