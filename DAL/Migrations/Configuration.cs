@@ -32,9 +32,11 @@ namespace DAL.Migrations
             //
 
             // udaje sa ulozia do tabuliek
+
+
             var student1 = new Student() {
                 Name = "Jano",
-                Surname = "Maly",
+                Surname = "Maly"
             };
 
             var student2 = new Student() {
@@ -51,10 +53,6 @@ namespace DAL.Migrations
                 Name = "Adam",
                 Surname = "Biely"
             };
-
-
-
-
 
             var answer1 = new Answer() {
 
@@ -73,12 +71,16 @@ namespace DAL.Migrations
                 Points = 2,
             };
 
-
+            answer1.Question = question1;
+            answer2.Question = question1;
+            
             var thematicField1 = new ThematicField() {
                 Name = "okruh sieti",
                 Questions = new List<Question>() { question1 },
                 Childrens = new List<ThematicField>() { }
             };
+
+            question1.ThematicField = thematicField1;
 
             var testPreface1 = new TestPreface() {
                 Name = "Test Siete",
@@ -86,7 +88,7 @@ namespace DAL.Migrations
                 ThematicFields = new List<ThematicField>() { thematicField1 },
                 NumberOfQuestions = 1
             };
-
+            thematicField1.TestPreface = testPreface1;
 
 
             var answer3 = new Answer() {
@@ -106,6 +108,8 @@ namespace DAL.Migrations
                 Points = 2,
             };
 
+            answer3.Question = question2;
+            answer4.Question = question2;
 
             var thematicField2 = new ThematicField() {
                 Name = "okruh unix",
@@ -113,12 +117,16 @@ namespace DAL.Migrations
                 Childrens = new List<ThematicField>() { }
             };
 
+            question2.ThematicField = thematicField2;
+
             var testPreface2 = new TestPreface() {
                 Name = "Test unix",
                 TimeInMinutes = 60,
                 ThematicFields = new List<ThematicField>() { thematicField2 },
                 NumberOfQuestions = 1
             };
+            thematicField2.TestPreface = testPreface2;
+           
 
             var studentGroup1 = new StudentGroup() {
                 Name = "skupina 1",
@@ -132,14 +140,17 @@ namespace DAL.Migrations
                 TestPrefaces = new List<TestPreface>() { testPreface2 }
             };
 
-
+            student1.StudentGroup = studentGroup1;
+            student2.StudentGroup = studentGroup1;
+            student3.StudentGroup = studentGroup1;
+            student4.StudentGroup = studentGroup2;
+            
             var teacher = new Teacher() {
                 Name = "ucitel z FI MUNI",
                 StudentGroups = new List<StudentGroup>() { studentGroup1, studentGroup2 },
                 TestPrefaces = new List<TestPreface>() {testPreface1, testPreface2 },
                 ThematicFields = new List<ThematicField>() {thematicField1, thematicField2 }
             };
-
 
 
             context.Students.AddOrUpdate(student1);
@@ -166,7 +177,7 @@ namespace DAL.Migrations
             context.ThematicFields.AddOrUpdate(thematicField1);
             context.ThematicFields.AddOrUpdate(thematicField2);
 
-
+    
             context.SaveChanges();
         }
     }

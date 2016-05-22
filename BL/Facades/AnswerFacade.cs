@@ -5,6 +5,7 @@ using AutoMapper;
 using BL.DTOs;
 using BL.Queries;
 using BL.Repositories;
+using DAL.Entities;
 using Riganti.Utils.Infrastructure.Core;
 
 namespace BL.Facades {

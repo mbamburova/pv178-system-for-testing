@@ -181,15 +181,18 @@
     <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\StudentGoupController.cs" />
+    <Compile Include="Controllers\TestPrefaceController.cs" />
     <Compile Include="Controllers\ThematicFieldController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AnswerEditViewModel.cs" />
     <Compile Include="Models\AnswerViewModel.cs" />
     <Compile Include="Models\QuestionViewModel.cs" />
     <Compile Include="Models\StudentEditViewModel.cs" />
     <Compile Include="Models\StudentGroupViewModel.cs" />
     <Compile Include="Models\StudentViewModel.cs" />
+    <Compile Include="Models\TestPrefaceViewModel.cs" />
     <Compile Include="Models\ThematicFieldViewModel.cs" />
     <Compile Include="MvcInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -233,11 +236,13 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\ThematicField\View.cshtml" />
     <Content Include="Views\Question\View.cshtml" />
-    <Content Include="Views\Student\View.cshtml" />
-    <Content Include="Views\Answer\View.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\View.cshtml" />
+    <Content Include="Views\ThematicField\View.cshtml" />
+    <Content Include="Views\Answer\View.cshtml" />
+    <Content Include="Views\TestPreface\View.cshtml" />
+    <Content Include="Views\Answer\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -262,6 +267,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -282,6 +290,9 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:2287/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

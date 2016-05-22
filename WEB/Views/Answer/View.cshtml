@@ -1,0 +1,27 @@
+﻿@model WEB.Models.AnswerViewModel
+
+<h2>Answers to question </h2>
+<p>
+    @Html.ActionLink("Add New answer", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Text
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Answers) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

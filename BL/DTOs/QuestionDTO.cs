@@ -5,7 +5,7 @@ namespace BL.DTOs {
     public class QuestionDTO {
         public int Id { get; set; }
 
-       // public List<AnswerDTO> Answers { get; set; }
+      //  public List<AnswerDTO> Answers { get; set; }
 
         [Required]
         public string Text { get; set; }
@@ -17,7 +17,8 @@ namespace BL.DTOs {
         [MaxLength(200)]
         public string Note { get; set; }
 
-       /* public QuestionDTO() {
+
+        /*public QuestionDTO() {
             Answers = new List<AnswerDTO>();
         }*/
 

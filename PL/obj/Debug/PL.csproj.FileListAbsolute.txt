@@ -7,7 +7,6 @@ C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\De
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\Castle.Windsor.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\Riganti.Utils.Infrastructure.Core.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\Riganti.Utils.Infrastructure.EntityFramework.dll
-C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\DAL.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\EntityFramework.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\AutoMapper.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\BL.pdb
@@ -36,3 +35,4 @@ C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\De
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\PL\bin\Debug\DAL.exe

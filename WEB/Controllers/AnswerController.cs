@@ -11,12 +11,12 @@ namespace WEB.Controllers
 {
     public class AnswerController : Controller {
         private readonly AnswerFacade answerFacade;
+        private readonly QuestionFacade questionFacade;
+
 
         public AnswerController(AnswerFacade answerFacade) {
             this.answerFacade = answerFacade;
         }
-
-
 
         // GET: Answer
         public ActionResult Index(int id)
@@ -25,45 +25,10 @@ namespace WEB.Controllers
         }
 
         private AnswerViewModel CreateAnswerViewModel(int id) {
-           /* var answers = answerFacade.GetAnswersByQuestion(id);
-            var correct = new List<AnswerDTO>();
-            for (int i = 0; i < answers.Count; i++) {
-                if (answers[i].IsCorrect) {
-                    correct.Add(answers[i]);
-                }
-            }*/
             return new AnswerViewModel() {
                 Answers = answerFacade.GetAnswersByQuestion(id),
                 QuestionId = id
             };
-        }
-
-        // GET: Answer/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Answer/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Answer/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: Answer/Edit/5
@@ -72,42 +37,22 @@ namespace WEB.Controllers
             return View();
         }
 
-        // POST: Answer/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: Answer/Delete/5
         public ActionResult Delete(int id) {
+
+            // Question.Id
+            var questionId = answerFacade.GetAswerById(id).Id;
             answerFacade.DeleteAnswer(id);
-            return View("View", CreateAnswerViewModel(id));
+            return View("View", CreateAnswerViewModel(questionId));
         }
 
-        // POST: Answer/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+        public ActionResult Create() {
+            var answerEditViewModel = new AnswerEditViewModel() {
+                Answer = new AnswerDTO(),
+               // Question = questionFacade.GetQuestionById()
+            };
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            return View("Create");
         }
     }
 }

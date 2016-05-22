@@ -24,19 +24,6 @@ namespace WEB.Controllers
             return View("View", CreateStudentViewModel(id));
         }
 
-        private StudentViewModel CreateStudentViewModel(int id) {
-            return new StudentViewModel() {
-                Students = studentFacade.GetStudentsByStudentGroup(id),
-                StudentGroupId = id,
-            };
-        }
-
-        // GET: Student/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
         // GET: Student/Create
         public ActionResult Create(int id)
         {
@@ -50,7 +37,7 @@ namespace WEB.Controllers
                 StudentGroupId = student?.StudentGroup.Id ?? 0
             };
         }
-
+        
         // POST: Student/Create
         [HttpPost]
         public ActionResult Create(StudentEditViewModel model)
@@ -59,50 +46,18 @@ namespace WEB.Controllers
             return View("View", CreateStudentViewModel(model.StudentGroupId));
         }
 
-        // GET: Student/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Student/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: Student/Delete/5
-        public ActionResult Delete(int id)
-        {
-           // var studentsGroupId = studentFacade.GetStudentById(id).StudentGroup.Id;
+        public ActionResult Delete(int id) {
+            var studentGroupId = studentFacade.GetStudentById(id).StudentGroup.Id;
             studentFacade.DeleteStudent(id);
-            return View("View", CreateStudentViewModel(id));
+            return View("View", CreateStudentViewModel(studentGroupId));
         }
 
-        // POST: Student/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+        private StudentViewModel CreateStudentViewModel(int id) {
+            return new StudentViewModel() {
+                Students = studentFacade.GetStudentsByStudentGroup(id),
+                StudentGroupId = id,
+            };
         }
     }
 }

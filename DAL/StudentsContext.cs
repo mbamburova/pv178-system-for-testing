@@ -12,7 +12,7 @@ namespace DAL {
         public DbSet<ThematicField> ThematicFields { get; set; }
         public DbSet<Answer> Answers { get; set; }
 
-        public StudentsContext() : base("Bamburova-MB") {
+        public StudentsContext() : base("DB-Bamburova") {
          //  Database.SetInitializer(new MigrateDatabaseToLatestVersion<StudentsContext,Migrations.Configuration>());
         
          //  Database.SetInitializer(new DataInitializer());

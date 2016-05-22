@@ -6,7 +6,7 @@ namespace DAL.Entities {
 
         public int Id { get; set; }
 
-        [Required]
+       
         public Question Question { get; set; }
 
         [Required]

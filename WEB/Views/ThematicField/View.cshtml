@@ -1,0 +1,24 @@
+﻿@model WEB.Models.ThematicFieldViewModel
+
+<h2>Thematic fields</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Teacher</th>
+        <th>Questions</th>
+    </tr>
+
+    @foreach (var item in Model.ThematicFields) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Teacher.Name)</td>
+            <td>
+                @Html.ActionLink("Questions", "Index", "Question", new {id = item.Id}, null)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to home", "Index", "Home")
+</div>

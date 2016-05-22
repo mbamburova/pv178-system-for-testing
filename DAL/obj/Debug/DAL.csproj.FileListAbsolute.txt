@@ -31,6 +31,7 @@ C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\D
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.correct6.resources
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.correct7.resources
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.requiredTextofAnswer.resources
+C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.Migrations.requiredquestionn.resources
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.dll.config
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\bin\Debug\DAL.dll
 C:\Users\Michaela Bamburová\Documents\GitHub\pv178-system-for-testing\DAL\obj\Debug\DAL.dll

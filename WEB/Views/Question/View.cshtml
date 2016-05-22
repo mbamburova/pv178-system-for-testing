@@ -9,7 +9,7 @@
     <tr>
         <th>Question number</th>
         <th>Text of question</th>
-        <th></th>
+        <th>Points</th>
         <th></th>
     </tr>
 
@@ -22,6 +22,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
             </td>
             <td>
                 @Html.ActionLink("Show answers", "Index", "Answer", new {id = item.Id}, null) |

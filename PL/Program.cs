@@ -33,9 +33,9 @@ namespace PL {
             studentFacade.CreateStudent(new StudentDTO() {Name = studentName}, 40);
 
             //update student
-            var studentWithId57 = studentFacade.GetStudentById(57);
+            var studentWithId57 = studentFacade.GetStudentById(1);
             studentWithId57.Name = "Jana(Jano)";
-            studentFacade.UpdateStudent(studentWithId57, 39);
+            studentFacade.UpdateStudent(studentWithId57, 2);
         }
 
         private static void TestAnswerFacade() {

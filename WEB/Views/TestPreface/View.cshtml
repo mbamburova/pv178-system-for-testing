@@ -1,0 +1,30 @@
+﻿@model WEB.Models.TestPrefaceViewModel
+
+<h2>Test for students</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Test time</th>
+        <th>Suited for student group</th>
+        <th>Teacher</th>
+        <th>Number of questions</th>
+    </tr>
+
+    @foreach (var item in Model.TestPrefaces) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.TimeInMinutes)</td>
+            <td>@Html.DisplayFor(modelItem => item.StudentGroups.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Teacher.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.NumberOfQuestions)</td>
+
+            <td>
+                @Html.ActionLink("Details", "Details", new {id = item.Id})
+            </td>
+        </tr>
+    }
+</table>
+<div>
+    @Html.ActionLink("Back to home", "Index", "Home")
+</div>
+
