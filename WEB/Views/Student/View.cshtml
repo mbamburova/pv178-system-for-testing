@@ -2,7 +2,7 @@
 
 <h2>Students from student group</h2>
 <p>
-    @Html.ActionLink("Add new student", "Create")
+    @Html.ActionLink("Add new student", "Create", new {id = Model.StudentGroupId})
 </p>
 <table class="table">
     <tr>
@@ -31,5 +31,5 @@
 
 </table>
 <div>
-    @Html.ActionLink("Back to student groups", "StudentGroups", "StudentGoup")
+    @Html.ActionLink("Back to student groups", "StudentGroups", "StudentGroup")
 </div>

@@ -2,7 +2,7 @@
 
 <h2>Answers to question </h2>
 <p>
-    @Html.ActionLink("Add New answer", "Create")
+    @Html.ActionLink("Add new answer", "Create", new {id = Model.QuestionId})
 </p>
 <table class="table">
     <tr>
@@ -23,5 +23,4 @@
         </td>
     </tr>
 }
-
 </table>

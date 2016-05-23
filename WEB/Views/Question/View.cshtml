@@ -1,10 +1,7 @@
-﻿@using System.Threading
-@model WEB.Models.QuestionViewModel
+﻿@model WEB.Models.QuestionViewModel
 
 <h2>Questions from thematic field </h2>
-<p>
-    @Html.ActionLink("Add new question", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>Question number</th>
@@ -18,7 +15,7 @@
     @foreach (var item in Model.Questions) {
         <tr>
             <td>
-                <p> <%= count%></p>
+                <p>@count</p>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Text)
@@ -29,7 +26,7 @@
             <td>
                 @Html.ActionLink("Show answers", "Index", "Answer", new {id = item.Id}, null) |
 
-                @Html.ActionLink("Edit question", "Edit", new {id = item.Id}) |
+                @Html.ActionLink("Edit question", "Edit", new {/*id = item.Id*/}) |
 
                 @Html.ActionLink("Delete question", "Delete", new {id = item.Id})
             </td>

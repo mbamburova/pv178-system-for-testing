@@ -10,9 +10,9 @@ using WEB.Models;
 namespace WEB.Controllers
 {
     public class AnswerController : Controller {
+
         private readonly AnswerFacade answerFacade;
         private readonly QuestionFacade questionFacade;
-
 
         public AnswerController(AnswerFacade answerFacade) {
             this.answerFacade = answerFacade;
@@ -31,28 +31,11 @@ namespace WEB.Controllers
             };
         }
 
-        // GET: Answer/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // GET: Answer/Delete/5
         public ActionResult Delete(int id) {
-
-            // Question.Id
-            var questionId = answerFacade.GetAswerById(id).Id;
+            var questionId = answerFacade.GetAswerById(id).Question.Id;
             answerFacade.DeleteAnswer(id);
+
             return View("View", CreateAnswerViewModel(questionId));
-        }
-
-        public ActionResult Create() {
-            var answerEditViewModel = new AnswerEditViewModel() {
-                Answer = new AnswerDTO(),
-               // Question = questionFacade.GetQuestionById()
-            };
-
-            return View("Create");
         }
     }
 }

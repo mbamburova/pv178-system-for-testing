@@ -7,7 +7,6 @@ using BL.DTOs;
 namespace WEB.Models {
     public class StudentViewModel {
 
-
         public List<StudentDTO> Students { get; set; } 
 
         public int StudentGroupId { get; set; }

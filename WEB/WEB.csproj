@@ -180,7 +180,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\QuestionController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\StudentGoupController.cs" />
+    <Compile Include="Controllers\StudentGroupController.cs" />
     <Compile Include="Controllers\TestPrefaceController.cs" />
     <Compile Include="Controllers\ThematicFieldController.cs" />
     <Compile Include="Global.asax.cs">
@@ -190,6 +190,7 @@
     <Compile Include="Models\AnswerViewModel.cs" />
     <Compile Include="Models\QuestionViewModel.cs" />
     <Compile Include="Models\StudentEditViewModel.cs" />
+    <Compile Include="Models\StudentGroupEditViewModel.cs" />
     <Compile Include="Models\StudentGroupViewModel.cs" />
     <Compile Include="Models\StudentViewModel.cs" />
     <Compile Include="Models\TestPrefaceViewModel.cs" />
@@ -231,7 +232,7 @@
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\StudentGoup\StudentGroups.cshtml" />
+    <Content Include="Views\StudentGroup\StudentGroups.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -242,7 +243,6 @@
     <Content Include="Views\ThematicField\View.cshtml" />
     <Content Include="Views\Answer\View.cshtml" />
     <Content Include="Views\TestPreface\View.cshtml" />
-    <Content Include="Views\Answer\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

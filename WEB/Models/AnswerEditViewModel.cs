@@ -9,8 +9,7 @@ namespace WEB.Models {
 
         public AnswerDTO Answer { get; set; }
 
-        public QuestionDTO Question { get; set; }
-        
-         
+        public int QuestionId { get; set; }
+           
     }
 }

@@ -4,30 +4,38 @@
 
 <div class="jumbotron">
     <h1>System for testing students</h1>
-    <p class="lead">
-        <span class="glyphicon glyphicon-user">
-        </span> Check out our students in student groups...
-    </p>
-    <button type="button" class="btn btn-default"> @Html.ActionLink("See the student groups", "StudentGroups", "StudentGoup")</button>
-    
-    
+
 </div>
 
 <div class="row">
     <div class="col-md-4">
-            <h3>
-                <span class="glyphicon glyphicon-list-alt">
-                </span> Thematic fields for students
-            </h3>
+        <h3>
+            <span class="glyphicon glyphicon-user">
+            </span> Check out our students
+        </h3>
+        <p class="lead">
+            <button type="button" class="btn btn-default"> @Html.ActionLink("See the student groups", "StudentGroups", "StudentGroup")</button>
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h3>
+            <span class="glyphicon glyphicon-list-alt">
+            </span> Thematic fields for students
+        </h3>
         <p class="lead">
             <button type="button" class="btn btn-default"> @Html.ActionLink("See the thematic fields", "ThematicFields", "ThematicField")</button>
         </p>
-            <h3>
-                <span class="glyphicon glyphicon-pencil">
-                </span> Tests
-            </h3>
-            <p class="lead">
-                <button type="button" class="btn btn-default"> @Html.ActionLink("See the given tests", "TestPrefaces", "TestPreface")</button>
-            </p>
     </div>
+
+    <div class="col-md-4">
+        <h3>
+            <span class="glyphicon glyphicon-pencil">
+            </span> Tests
+        </h3>
+        <p class="lead">
+            <button type="button" class="btn btn-default"> @Html.ActionLink("See the given tests", "TestPrefaces", "TestPreface")</button>
+        </p>
+    </div>
+
 </div>
