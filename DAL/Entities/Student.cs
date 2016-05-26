@@ -12,7 +12,7 @@ namespace DAL.Entities {
         [MaxLength(30)]
         public string Surname { get; set; }
 
-        public StudentGroup StudentGroup { get; set; }
+        public virtual StudentGroup StudentGroup { get; set; }
 
         public override string ToString() => $"Student {Name} {Surname}, with id: {Id}";
     }

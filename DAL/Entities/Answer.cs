@@ -7,7 +7,7 @@ namespace DAL.Entities {
         public int Id { get; set; }
 
        
-        public Question Question { get; set; }
+        public virtual Question Question { get; set; }
 
         [Required]
         [MaxLength(255)]

@@ -9,11 +9,11 @@ namespace DAL.Entities {
         [Required]
         public string Text { get; set; }
 
-        public List<Answer> Answers { get; set; }
+        public virtual List<Answer> Answers { get; set; }
 
         public int Points { get; set; }
 
-        public ThematicField ThematicField { get; set; }
+        public virtual ThematicField ThematicField { get; set; }
 
         [MaxLength(200)]
         public string Note { get; set; }

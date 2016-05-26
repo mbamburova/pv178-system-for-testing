@@ -43,7 +43,8 @@ namespace WEB.Controllers
 
         // GET: Student/Delete
         public ActionResult Delete(int id) {
-            var studentGroupId = studentFacade.GetStudentById(id).StudentGroup.Id;
+            var studentGroup = studentFacade.GetStudentById(id).StudentGroup;
+                 var studentGroupId = studentGroup.Id;
             studentFacade.DeleteStudent(id);
             return View("View", CreateStudentViewModel(studentGroupId));
         }

@@ -13,7 +13,7 @@ namespace DAL.Entities {
 
         public virtual Teacher Teacher { get; set; }
 
-        public ThematicField Parent { get; set; }
+        public virtual ThematicField Parent { get; set; }
 
         public virtual List<ThematicField> Childrens { get; set; }
 
